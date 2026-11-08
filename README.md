@@ -62,9 +62,9 @@ out/
 
 Para installar um pacote `.pakz` no NextUI basta coloca-lo na raiz do cartão de memória onde o NextUI está instalado. Ao reiniciar o dispositivo o pacote será automaticamente instalado no sistema. Pacotes pré-compilados para os dispositivos suportados podem ser encontrados nos [Releases do projeto](https://github.com/GERALTdTATUI/NextUI-minput-forked/releases/latest).
 
-- Pacote pronto para o [Trimui Smart Pro](https://github.com/GERALTdTATUI/NextUI-minput-forked/releases/download/latest/minput-tg5040.pakz)
-- Pacote pronto para o [Trimui Smart Pro S](https://github.com/GERALTdTATUI/NextUI-minput-forked/releases/download/latest/minput-tg5050.pakz)
-- Pacote pronto para o [Anbernic RG handhelds](https://github.com/GERALTdTATUI/NextUI-minput-forked/releases/download/latest/minput-h700.pakz)
+- Pacote pronto para o [Trimui Smart Pro](https://github.com/GERALTdTATUI/NextUI-minput-forked/releases/latest/download/install-minput-tg5040.pakz)
+- Pacote pronto para o [Trimui Smart Pro S](https://github.com/GERALTdTATUI/NextUI-minput-forked/releases/latest/download/install-minput-tg5050.pakz)
+- Pacote pronto para o [Anbernic RG handhelds](https://github.com/GERALTdTATUI/NextUI-minput-forked/releases/latest/download/install-minput-h700.pakz)
 
 
 
