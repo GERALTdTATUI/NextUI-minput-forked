@@ -5,6 +5,7 @@
 *.dtb
 *.zip
 
+out
 build
 releases
 toolchains
