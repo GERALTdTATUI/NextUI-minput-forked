@@ -2,6 +2,18 @@
 
 Versão independente do `minput` do NextUI. Este repositório contém o programa, suas dependências compartilhadas e os arquivos específicos de cada plataforma necessários para compilar **somente o minput** e gerar um pacote instalável `.pakz`.
 
+Essa é uma versão customizada do monitor de inputs do NextUI com obtivo de habilitar a função de monitoramento das alavancas analógicas do dispositivo. Aparentemente essa função já faz parte do binário mas foi desabilitada ou não é compatível com o Trimui Smart PRO. Pra isso criei esse repositório publicando uma versão que torna compatível a função de monitoramento para o Trimui Smart PRO e, talvez, outros dispositivos.
+
+## Antes
+Input.pak nativo do NextUI, incapaz de monitorar a posição dos analógicos do meu portátil:
+<img width="1489" height="639" alt="Antes" src="https://github.com/user-attachments/assets/0e5d1d0b-f032-4f4a-918b-f1ff40a9cd45" />
+
+## Depois
+Input.pak modificado refinando os critérios de detecção de alavancas analógicas:
+<img width="1489" height="639" alt="Depois" src="https://github.com/user-attachments/assets/05193329-9fb4-4112-9d1f-6dda69022601" />
+
+
+
 ## Plataformas suportadas
 
 - `tg5040`
