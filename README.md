@@ -28,7 +28,7 @@ Na raiz do repositório:
 make
 ```
 
-Por padrão, compila para `tg5040`. Para selecionar outra plataforma:
+Por padrão, o projeto compila para `tg5040`. Para selecionar outra plataforma:
 
 ```sh
 make PLATFORM=tg5040
@@ -43,6 +43,30 @@ make all-platforms
 ```
 
 O alvo padrão prepara a toolchain oficial `LoveRetro/<plataforma>-toolchain`, compila a `libmsettings`, compila somente o `minput` e então monta o pacote `.pakz`.
+
+## Saída
+
+Os binários são compilados em `out/<PLATFORM>/binaries/`, enquanto os pacotes `.pakz` ficam diretamente em `out/`:
+
+```text
+out/
+├── tg5040/binaries/minput
+├── tg5050/binaries/minput
+├── h700/binaries/minput
+├── minput-tg5040.pakz
+├── minput-tg5050.pakz
+└── minput-h700.pakz
+```
+
+## Instalar no sistema
+
+Para installar um pacote `.pakz` no NextUI basta coloca-lo na raiz do cartão de memória onde o NextUI está instalado. Ao reiniciar o dispositivo o pacote será automaticamente instalado no sistema. Pacotes pré-compilados para os dispositivos suportados podem ser encontrados nos [Releases do projeto](https://github.com/GERALTdTATUI/NextUI-minput-forked/releases/latest).
+
+- Pacote pronto para o [Trimui Smart Pro](https://github.com/GERALTdTATUI/NextUI-minput-forked/releases/download/latest/minput-tg5040.pakz)
+- Pacote pronto para o [Trimui Smart Pro S](https://github.com/GERALTdTATUI/NextUI-minput-forked/releases/download/latest/minput-tg5050.pakz)
+- Pacote pronto para o [Anbernic RG handhelds](https://github.com/GERALTdTATUI/NextUI-minput-forked/releases/download/latest/minput-h700.pakz)
+
+
 
 ## Templates de pacote por plataforma
 
@@ -76,24 +100,6 @@ cd "$(dirname "$0")"
 ```
 
 Se o script tiver configurações específicas do aparelho, mantenha-as nele. O empacotador copia todo o conteúdo da pasta `Input.pak/` sem modificar os arquivos originais e adiciona o binário compilado com o nome `minput`.
-
-## Saída
-
-Os binários são compilados em `out/<PLATFORM>/binaries/`, enquanto os pacotes `.pakz` ficam diretamente em `out/`:
-
-```text
-out/
-├── tg5040/binaries/minput
-├── tg5050/binaries/minput
-├── h700/binaries/minput
-├── minput-tg5040.pakz
-├── minput-tg5050.pakz
-└── minput-h700.pakz
-```
-
-## Instalar no sistema
-
-Para installar um pacote `.pakz` no NextUI basta coloca-lo na raiz do cartão de memória onde o NextUI está instalado. Ao reiniciar o dispositivo o pacote será automaticamente instalado no sistema.
 
 ## Outros comandos
 
