@@ -69,7 +69,7 @@ package: build check-packaging-tools
 	cp -a "$(PAK_TEMPLATE)" "$$tmpdir/Tools/$(PLATFORM)/"; \
 	rm -f "$$tmpdir/Tools/$(PLATFORM)/Input.pak/.gitkeep"; \
 	chmod +x "$$tmpdir/Tools/$(PLATFORM)/Input.pak/launch.sh"; \
-	install -m 755 "$(BINARY)" "$$tmpdir/Tools/$(PLATFORM)/Input.pak/minput"; \
+	install -m 755 "$(BINARY)" "$$tmpdir/Tools/$(PLATFORM)/Input.pak/minput.elf"; \
 	(cd "$$tmpdir" && zip -qr "$(abspath $(PAKZ))" "Tools/$(PLATFORM)/Input.pak")
 	@echo
 	@echo "Pacote NextUI criado: $(PAKZ)"
